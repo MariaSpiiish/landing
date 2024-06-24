@@ -1,0 +1,43 @@
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 100px auto 120px;
+}
+
+.testimonials__header {
+    margin: 0;
+    font-size: 32px;
+    color: #2B4074;
+}
+
+.testimonials__quote {
+    max-width: 780px;
+    margin: 30px auto 80px;
+}
+
+.testimonials__text {
+    margin: 0;
+    font-family: 'Roboto Condensed';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #4A4A4A;
+}
+
+.testimonials__bold-text {
+    font-weight: 600;
+    color:#2B4074;
+}
+
+.testimonials__footer {
+    font-family: 'Roboto Condensed';
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #4A4A4A;
+    text-align: center;
+    margin-top: 30px;
+}

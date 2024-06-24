@@ -1,0 +1,73 @@
+.recents {
+    background: linear-gradient(#2B4074, #f2f4f8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 618px;
+    border-bottom: 1px solid #fff;
+}
+
+.recents__title {
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    line-height: 1;
+    margin: 24px 0;
+}
+
+.recents__line {
+    background-color: #fff;
+    width: 100px;
+    height: 8px;
+}
+
+.recents__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 21px;
+    list-style: none;
+    margin-top: 80px;
+}
+
+.recents__grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.recents__grid-button {
+    width: 243px;
+    height: 217px;
+    background-color: #F9F6E5;
+    opacity: 0.8;
+    position: absolute;
+    background-image: url('../../images/recents/search-icons.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70px 32px;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    right: 0;
+    left: 0;
+    top: 11px;
+    margin: auto;
+    display: none;
+}
+
+.recents__grid-item:hover .recents__grid-button {
+    cursor: pointer;
+    display: block;
+}
+
+.recents__grid-img-caption {
+    color:#2B4074;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 30px 0 0;
+}

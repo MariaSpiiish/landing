@@ -1,0 +1,80 @@
+.intro {
+    max-width: 1440px;
+    height: 668px;
+    background: url('../../images/intro/intro.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: flex-start;
+}
+
+.intro__content-container {
+    color: #fff;
+    text-align: center;
+    max-width: 851px;
+    font-family: 'Roboto Condensed';
+}
+
+.intro__title {
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-weight: normal;
+    margin: 107px 0 0;
+}
+
+.intro__subtitle {
+    font-size: 24px;
+    line-height: 1.1;
+    margin: 18px 0 28px;
+}
+
+.intro__button {
+    width: 200px;
+    height: 50px;
+    background-color: #2B4074;
+    color: #fff;
+    padding: 0;
+    margin-bottom: 127px;
+}
+
+.intro__button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.intro__carousel-controls {
+    position: absolute;
+    right: 5px;
+    top: 264px;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__carousel-control {
+    width: 70px;
+    height: 70px;
+    background-color: #F9F6E5;
+    color: #979797;
+}
+
+.intro__carousel-control_active {
+    background-color: #2B4074;
+    color: #fff;
+}
+
+.intro__arrow {
+    display: block;
+    margin: auto;
+    padding-top: 22px;
+}
+
+.intro__carousel-control:hover {
+    opacity: 0.9;
+}
+
+
+
