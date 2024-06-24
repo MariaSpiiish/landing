@@ -8,7 +8,7 @@
 }
 
 .videoBlock__img {
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .videoBlock__content {
@@ -48,7 +48,8 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 1;
-    border-radius: 4px;
+    border-radius: 3px;
+    border: none;
 }
 
 .videoBlock__button:hover {

@@ -39,6 +39,8 @@
     color: #fff;
     padding: 0;
     margin-bottom: 127px;
+    border: none;
+    border-radius: 3px;
 }
 
 .intro__button:hover {
