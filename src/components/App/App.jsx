@@ -5,6 +5,7 @@ import Main from '../Main/Main.jsx';
 import Popup from '../Popup/Popup.jsx';
 import './App.css';
 import { getPosts } from '../../utils/api.jsx';
+import BackToTop from '../BackToTop/BackToTop.jsx';
 
 function App() {
   const [fetchedData, setFetchedData] = useState([]);
@@ -32,6 +33,7 @@ function App() {
           <Header />
           <Main setSelectedItem={setSelectedItem} items={fetchedData} setIsPopupOpen={setIsPopupOpen}/>
           <Footer />
+          <BackToTop />
           <Popup item={selectedItem} isOpen={isPopupOpen} close={closePopup}/>
         </div>
     </div>
