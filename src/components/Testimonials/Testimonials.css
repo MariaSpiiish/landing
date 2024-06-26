@@ -71,4 +71,10 @@
     .testimonials {
         min-width: 320px;
     }
+    .testimonials__quote {
+        max-width: 210px;
+    }
+    .testimonials__text {
+        font-size: 24px;
+    }
 }
