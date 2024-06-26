@@ -140,5 +140,6 @@
         height: 226px;
         background-size: 73px 33px;
         background-image: url('../../images/recents/search-icons.png');
+        top: 12px;
     }
 }
