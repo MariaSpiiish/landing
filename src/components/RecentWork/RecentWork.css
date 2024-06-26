@@ -4,8 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 618px;
     border-bottom: 1px solid #fff;
+    margin: 0 auto;
 }
 
 .recents__title {
@@ -70,4 +70,75 @@
     font-size: 14px;
     font-weight: 700;
     margin: 30px 0 0;
+}
+
+@media (max-width: 1200px) {
+    .recents {
+        max-width: 1024px;
+        justify-content: flex-start;
+    }
+    .recents__title {
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    .recents__grid {
+        grid-template-columns: repeat(2, 2fr);
+        grid-row: auto;
+        gap: 27px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1010px) {
+    .recents {
+        max-width: 770px;
+    }
+}
+
+@media (max-width: 785px) {
+    .recents {
+        max-width: 640px;
+    }
+    .recents__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .recents__grid-img-caption {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .recents__grid-img {
+        width: 518;
+        height: 460px;
+    }
+    .recents__grid-button {
+        width: 469px;
+        height: 417px;
+        top: 24px;
+        background-size: 135px 61px;
+        background-image: url('../../images/recents/search-icons-big.png');
+    }
+}
+
+@media (max-width: 650px) {
+    .recents {
+        min-width: 320px;
+    }
+    .recents__title {
+        font-size: 24px;
+    }
+    .recents__line {
+        width: 50px;
+    }
+    .recents__grid-img {
+        width: 280px;
+        height: 250px;
+    }
+    .recents__grid-button {
+        width: 253px;
+        height: 226px;
+        background-size: 73px 33px;
+        background-image: url('../../images/recents/search-icons.png');
+    }
 }

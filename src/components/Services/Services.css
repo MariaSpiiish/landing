@@ -178,7 +178,7 @@
 
 @media (max-width: 650px) {
     .services {
-        max-width: 320px;
+        min-width: 320px;
         min-height: 2599px;
     }
     .services__grid {

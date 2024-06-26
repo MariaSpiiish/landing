@@ -1,4 +1,5 @@
 import './Footer.css';
+// import { useState, useEffect } from 'react';
 import logo from '../../images/logo.png';
 import facebook from '../../images/footer/f.png';
 import google from '../../images/footer/g.png';
@@ -6,6 +7,32 @@ import twitter from '../../images/footer/t.png';
 import pin from '../../images/footer/pin.png';
 
 function Footer() {
+    // const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
+    // const [logoPosition, setLogoPosition] = useState(() => {
+    //     window.innerWidth >= 1200 && 1440/2 - 115;
+    //     (window.innerWidth < 1200 && window.innerWidth >= 1010) && 1024/2 - 115;
+    //     (window.innerWidth < 1010 && window.innerWidth >= 785) && 770/2 - 115;
+    //     (window.innerWidth < 785 && window.innerWidth >= 650) && 640/2 - 115;
+    // });
+
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //     setDisplayWidth(window.innerWidth);
+    //     };
+
+    //     window.addEventListener('resize', handleResize);
+
+    //     return () => {
+    //     window.removeEventListener('resize', handleResize);
+    //     };
+    // }, []);
+
+    // useEffect(() => {
+        
+    //         setLogoPosition(displayWidth/2 -115);
+        
+    // }, [displayWidth])
+
   return (
     <footer className='footer'>
         <div className='footer__logo'>

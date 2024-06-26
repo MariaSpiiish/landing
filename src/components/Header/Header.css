@@ -54,7 +54,7 @@
 
 @media (max-width: 650px) {
     .header {
-        max-width: 320px;
+        min-width: 320px;
     }
     .header__menu {
         margin-right: 25px;

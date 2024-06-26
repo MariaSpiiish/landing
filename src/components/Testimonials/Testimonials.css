@@ -41,3 +41,34 @@
     text-align: center;
     margin-top: 30px;
 }
+
+@media(max-width: 1200px) {
+    .testimonials {
+       max-width: 1024px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .testimonials {
+        max-width: 770px;
+    }
+    .testimonials__quote {
+        max-width: 687px;
+    }
+    .testimonials__text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 785px) {
+    .testimonials {
+        max-width: 640px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .testimonials {
+        min-width: 320px;
+    }
+}
