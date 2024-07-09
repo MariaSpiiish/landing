@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import './Popup.css';
 
 
-function Popup({item, isOpen, close}) {
+function Popup({isOpen, close, item}) {
   useEffect(() => {
     const handleKeyPress = (event) => {
       event.key === 'Escape' && close()

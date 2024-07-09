@@ -6,11 +6,13 @@ import Popup from '../Popup/Popup.jsx';
 import './App.css';
 import { getPosts } from '../../utils/api.jsx';
 import BackToTop from '../BackToTop/BackToTop.jsx';
+import PopupForm from '../PopupForm/PopupForm.jsx';
 
 function App() {
   const [fetchedData, setFetchedData] = useState([]);
   const [selectedItem, setSelectedItem] = useState({});
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [isPopupFormOpen, setIsPopupFormOpen] = useState(false);
   
 
   useEffect(() => {
@@ -31,9 +33,10 @@ function App() {
     <div className="page-container">
         <div className="page">
           <Header />
-          <Main setSelectedItem={setSelectedItem} items={fetchedData} setIsPopupOpen={setIsPopupOpen}/>
+          <Main setSelectedItem={setSelectedItem} items={fetchedData} setIsPopupFormOpen={setIsPopupFormOpen} setIsPopupOpen={setIsPopupOpen}/>
           <Footer />
           <BackToTop />
+          <PopupForm open={isPopupFormOpen} setOpen={setIsPopupFormOpen} />
           <Popup item={selectedItem} isOpen={isPopupOpen} close={closePopup}/>
         </div>
     </div>

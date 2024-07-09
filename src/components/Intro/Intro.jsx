@@ -5,6 +5,7 @@ import prev from '../../images/intro/left.png';
 import next from '../../images/intro/right.png';
 
 
+// eslint-disable-next-line react/prop-types
 function Intro() {
   const [displayWidth, setDisplayWidth] = useState(window.innerWidth);
 

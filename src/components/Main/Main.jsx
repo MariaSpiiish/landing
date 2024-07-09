@@ -7,11 +7,11 @@ import LatestNews from '../LatestNews/LatestNews';
 import Testimonials from '../Testimonials/Testimonials';
 
 // eslint-disable-next-line react/prop-types
-function Main({ setSelectedItem, setIsPopupOpen, items }) {
+function Main({ setSelectedItem, setIsPopupFormOpen, setIsPopupOpen, items }) {
   return (
     <main>
         <Intro />
-        <Promo />
+        <Promo setOpen={setIsPopupFormOpen}/>
         <Services setSelectedItem={setSelectedItem} setIsPopupOpen={setIsPopupOpen} items={items}/>
         <RecentWork />
         <VideoBlock />
