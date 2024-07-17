@@ -42,8 +42,6 @@ function PopupForm({ open, setOpen }) {
                 <Input 
                     placeholder='Ваш номер телефона'
                     type='tel'
-                    
-            
                 />
             </Space>
             
